@@ -6,16 +6,12 @@
         public Audio(string name):base(name)
         {
         }
-        public override void Activate(Terorrist terorrist)
+        public override void Activate(Terorrist terorrist,string name)
         {
-            foreach(var sensor in terorrist.SuitableSensors)
+            if (this.Name == name && !this.activ)
             {
-                if (sensor.Name == Name && !sensor.activ)
-                {
-                    sensor.activ = true;
-                    Console.WriteLine("Listening has begun.");
-                    break;
-                }
+                this.activ = true;
+                Console.WriteLine("Listening has begun.");
             }
         }
     }

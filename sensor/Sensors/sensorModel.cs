@@ -8,7 +8,7 @@
         {
             Name = name;
         }
-        public abstract void Activate(Terorrist terorrist);
+        public abstract void Activate(Terorrist terorrist,string name);
      
     }
 }

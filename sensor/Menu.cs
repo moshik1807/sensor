@@ -5,40 +5,39 @@
 
         public Menu()
         {
-            Audio audio = new Audio("ss");
-            Thermal thermal = new Thermal("tt");
-
-            Console.WriteLine(audio.Name);
-            Terorrist n = new Terorrist("n");
-            n.SuitableSensors.Add(audio);
-            n.SuitableSensors.Add(thermal);
-            audio.Activate(n);
-            audio.Activate(n);
-            SensorFactory cc = new SensorFactory();
-            cc.create();
-            Game(n);
+            terorristFactory xxxx = new terorristFactory();
+            Terorrist terrorist = xxxx.creatTerorrist("foot soldier");
+            Game(terrorist);
         }
+
         public void Game(Terorrist terorrist)
         {
-            int caunter = 0;
-            foreach(var t in terorrist.SuitableSensors)
+            int counter = 0;
+
+            while (counter < terorrist.SuitableSensors.Count())
             {
-                if (t.activ)
+                Console.Write("Enter sensor type:");
+                string input = Console.ReadLine();
+                bool foundMatch = false;
+                foreach (var sensor in terorrist.SuitableSensors)
                 {
-                    caunter ++;
+                    if (sensor.Name == input && !sensor.activ)
+                    {
+                        sensor.Activate(terorrist, input);
+                        sensor.activ = true;
+                        counter++;
+                        foundMatch = true;
+                        Console.WriteLine($"Correct! Progress: {counter}/{terorrist.SuitableSensors.Count()}");
+                        break;
+                    }
+                }
+                if (!foundMatch)
+                {
+                    Console.WriteLine("Incorrect or already activated. Try again.");
                 }
             }
-            if(caunter == terorrist.SuitableSensors.Count())
-            {
-                Console.WriteLine("winer");
-            }
-            else
-            {
-                Console.WriteLine($"you heav {caunter}/{terorrist.SuitableSensors.Count()}");
-            }
+            Console.WriteLine("Winner!");
         }
-        
-
     }
 }
 

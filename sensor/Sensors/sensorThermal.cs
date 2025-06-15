@@ -6,15 +6,23 @@
         public Thermal(string name):base(name)
         {
         }
-        public override void Activate(Terorrist terorrist)
+        public override void Activate(Terorrist terorrist,string name)
         {
-            foreach (var sensor in terorrist.SuitableSensors)
+            if (this.Name == name && !this.activ)
             {
-                if (sensor.Name == Name && !sensor.activ)
+                this.activ = true;
+                List<Sensor> noActive = new List<Sensor>();
+                foreach (var sensor in terorrist.SuitableSensors)
                 {
-                    sensor.activ = true;
-                    Console.WriteLine(terorrist.SuitableSensors[rnd.Next(0, terorrist.SuitableSensors.Count())].Name);
-                    break;
+                    if (!sensor.activ)
+                    {
+                        noActive.Add(sensor);
+                    }
+                }
+                if (noActive.Count != 0)
+                {
+                    Console.WriteLine($"one of the elements is:{noActive[rnd.Next(0, noActive.Count())].Name}");
+
                 }
             }
         }
