@@ -1,0 +1,15 @@
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.AssemblyInfoInputs.cache
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.AssemblyInfo.cs
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.sourcelink.json
+C:\Users\משתמש\Desktop\sensor\sensor\bin\Debug\net8.0\sensor.exe
+C:\Users\משתמש\Desktop\sensor\sensor\bin\Debug\net8.0\sensor.deps.json
+C:\Users\משתמש\Desktop\sensor\sensor\bin\Debug\net8.0\sensor.runtimeconfig.json
+C:\Users\משתמש\Desktop\sensor\sensor\bin\Debug\net8.0\sensor.dll
+C:\Users\משתמש\Desktop\sensor\sensor\bin\Debug\net8.0\sensor.pdb
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.dll
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\refint\sensor.dll
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.pdb
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\sensor.genruntimeconfig.cache
+C:\Users\משתמש\Desktop\sensor\sensor\obj\Debug\net8.0\ref\sensor.dll
