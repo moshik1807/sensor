@@ -2,13 +2,21 @@
 {
     public class Audio:Sensor
     {
+
         public Audio(string name):base(name)
         {
         }
-        public override void Activate()
+        public override void Activate(Terorrist terorrist)
         {
-            Console.WriteLine("Listening has begun.");
+            foreach(var sensor in terorrist.SuitableSensors)
+            {
+                if (sensor.Name == Name && !sensor.activ)
+                {
+                    sensor.activ = true;
+                    Console.WriteLine("Listening has begun.");
+                    break;
+                }
+            }
         }
     }
-
 }

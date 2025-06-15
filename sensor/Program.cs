@@ -4,7 +4,8 @@
     {
         static void Main()
         {
-         
+            Menu x = new Menu();
+
         }
     }
 }
