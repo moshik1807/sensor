@@ -7,24 +7,37 @@
         {
             Audio audio = new Audio("ss");
             Thermal thermal = new Thermal("tt");
-            audio.Activate();
-            audio.Activate();
+
             Console.WriteLine(audio.Name);
             Terorrist n = new Terorrist("n");
-            Console.WriteLine(n.Checked(audio));
-            
+            n.SuitableSensors.Add(audio);
+            n.SuitableSensors.Add(thermal);
+            audio.Activate(n);
+            audio.Activate(n);
+            SensorFactory cc = new SensorFactory();
+            cc.create();
+            Game(n);
         }
-        public void Game()
+        public void Game(Terorrist terorrist)
         {
-            Console.WriteLine("ENTER");
-            string coice = Console.ReadLine();
-            switch (coice)
+            int caunter = 0;
+            foreach(var t in terorrist.SuitableSensors)
             {
-                case "a":
-                    break;
+                if (t.activ)
+                {
+                    caunter ++;
+                }
             }
-               
+            if(caunter == terorrist.SuitableSensors.Count())
+            {
+                Console.WriteLine("winer");
+            }
+            else
+            {
+                Console.WriteLine($"you heav {caunter}/{terorrist.SuitableSensors.Count()}");
+            }
         }
+        
 
     }
 }
