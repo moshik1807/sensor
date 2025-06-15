@@ -2,22 +2,24 @@
 {
     public class SensorFactory
     {
-        public string type;
         public Sensor sensor = null;
-        public void EnterType()
+        public Sensor createSensor(string type)
         {
-            Console.WriteLine("enter");
-            type = Console.ReadLine();
-        }
-        public void create()
-        {
-            EnterType();
+            //EnterType();
             switch (type)
             {
+                
                 case "audio":
                     Audio audio = new Audio(type);
+                    sensor = audio;
                     break;
+                case "thermal":
+                    Thermal thermal = new Thermal(type);
+                    sensor = thermal;
+                    break;
+
             }
+            return sensor;
         }
 
     }
