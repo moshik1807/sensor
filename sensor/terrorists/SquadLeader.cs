@@ -4,20 +4,27 @@
     {
         public SquadLeader(string name) : base(name)
         {
-            counterAttack = 3;
         }
         public override void protection()
         {
             this.counter++;
-            if (this.counter >= counterAttack)
+            if (this.counter >= 3)
             {
-                foreach (var sensor in this.SuitableSensors)
+                if (AttackBlocker > 0)
                 {
-                    if(sensor.activ)
+                    AttackBlocker--;
+                    this.counter = 0;
+                }
+                else
+                {
+                    foreach (var sensor in this.SuitableSensors)
                     {
-                        sensor.activ = false;
-                        this.counter = 0;
-                        break;
+                        if (sensor.activ)
+                        {
+                            sensor.activ = false;
+                            this.counter = 0;
+                            break;
+                        }
                     }
                 }
             }

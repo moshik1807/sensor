@@ -50,7 +50,7 @@ namespace sensor.models
                 }
                 terorrist.protection();
 
-                //סופר כמה סנסורים דלוקים
+                //סופר כמה סנסורים דלוקים ומדפיס הודעה בהתאם
                 int activeCount = 0;
                 foreach(var t in terorrist.SuitableSensors)
                 {
