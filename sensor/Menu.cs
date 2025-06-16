@@ -9,7 +9,7 @@ namespace sensor.models
         public Menu()
         {
             terorristFactory xxxx = new terorristFactory();
-            Terorrist terrorist = xxxx.creatTerorrist("squad leader");
+            Terorrist terrorist = xxxx.creatTerorrist("organization leader");
             Game(terrorist);
         }
 
