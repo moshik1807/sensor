@@ -8,7 +8,7 @@
         public override void Activate(Terorrist terorrist)
         {
             this.activ = true;
-            //terorrist.counterAttack -= 6;
+            terorrist.AttackBlocker ++;
         }
     }
 }
