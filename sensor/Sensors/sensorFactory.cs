@@ -17,7 +17,12 @@
                     Thermal thermal = new Thermal(type);
                     sensor = thermal;
                     break;
-
+                case "pulse":
+                    Pulse pulse = new Pulse(type);
+                    sensor = pulse;
+                    break;
+                default:
+                    break;
             }
             return sensor;
         }

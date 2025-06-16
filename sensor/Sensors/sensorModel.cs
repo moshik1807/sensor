@@ -4,12 +4,12 @@
     {
         public bool activ = false;
         public string Name;
-        public int counter = 0;
+        public static int counter = 0;
         public Sensor(string name)
         {
             Name = name;
         }
-        public abstract void Activate(Terorrist terorrist,string name);
+        public abstract void Activate(Terorrist terorrist);
      
     }
 }

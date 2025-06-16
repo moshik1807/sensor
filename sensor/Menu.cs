@@ -9,7 +9,7 @@ namespace sensor.models
         public Menu()
         {
             //terorristFactory xxxx = 
-            Terorrist terrorist = new terorristFactory().creatTerorrist("organization leader");
+            Terorrist terrorist = new terorristFactory().creatTerorrist("foot soldier");
             Game(terrorist);
         }
 
@@ -37,7 +37,7 @@ namespace sensor.models
                 {
                     if (sensor.Name == input && !sensor.activ)
                     {
-                        sensor.Activate(terorrist, input);
+                        sensor.Activate(terorrist);
                         foundMatch = true;
                         break;
                     }
