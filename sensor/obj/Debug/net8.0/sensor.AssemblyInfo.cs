@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sensor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edf45f1c1680e7568b748b80adc582a50ecbcef6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bba513adf8cc436d3bc013f702a28d5b22741f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("sensor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sensor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

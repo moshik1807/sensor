@@ -4,6 +4,7 @@
     {
         public bool activ = false;
         public string Name;
+        public int counter = 0;
         public Sensor(string name)
         {
             Name = name;
