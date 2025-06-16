@@ -8,9 +8,15 @@ namespace sensor.models
         
         public Menu()
         {
-            //terorristFactory xxxx = 
-            Terorrist terrorist = new terorristFactory().creatTerorrist("squad leader");
-            Game(terrorist);
+            Terorrist terorrist1 = new terorristFactory().creatTerorrist("foot soldier");
+            Terorrist terorrist2 = new terorristFactory().creatTerorrist("squad leader");
+            Terorrist terorrist3 = new terorristFactory().creatTerorrist("senior commander");
+            Terorrist terorrist4 = new terorristFactory().creatTerorrist("organization leader");
+            List<Terorrist> terorristList = new List<Terorrist> { terorrist1, terorrist2, terorrist3, terorrist4 };
+            foreach(var terorrist in terorristList)
+            {
+                Game(terorrist);
+            }
         }
 
         public void Game(Terorrist terorrist)
