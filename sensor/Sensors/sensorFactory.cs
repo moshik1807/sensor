@@ -2,10 +2,9 @@
 {
     public class SensorFactory
     {
-        public Sensor sensor = null;
         public Sensor createSensor(string type)
         {
-            //EnterType();
+            Sensor sensor = null;
             switch (type)
             {
                 
@@ -23,9 +22,11 @@
                     break;
                 case "magnetic":
                     Magnetic magnetic = new Magnetic(type);
+                    sensor = magnetic;
                     break;
                 case "singel":
                     Singel singel = new Singel(type);
+                    sensor = singel;
                     break;
                 default:
                     break;

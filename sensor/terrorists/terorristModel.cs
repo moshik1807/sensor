@@ -7,7 +7,7 @@ namespace sensor.models
         public List<Sensor> SuitableSensors = new List<Sensor>();
         public string Name;
         public int counter = 0;
-        public int counterAttack;
+        public int counterAttack = 0;
         public Terorrist(string name)
         {
             Name = name;
