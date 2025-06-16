@@ -3,7 +3,7 @@
     public class terorristFactory
     {
         public Random rnd = new Random();
-        public List<string> sensorType = new List<string> { "audio", "thermal" };
+        public List<string> sensorType = new List<string> { "audio", "thermal", "pulse" };
         public Terorrist creatTerorrist(string type)
         {
             Terorrist newTerorrist = null;
@@ -47,4 +47,4 @@
         }
     }
 }
-//, "Pulse", "Motion", "Magnetic", "Signal", "Light"
+//, "Magnetic", "Signal", "Light"

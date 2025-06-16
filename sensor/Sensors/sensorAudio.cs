@@ -6,13 +6,10 @@
         public Audio(string name):base(name)
         {
         }
-        public override void Activate(Terorrist terorrist,string name)
+        public override void Activate(Terorrist terorrist)
         {
-            if (this.Name == name && !this.activ)
-            {
-                this.activ = true;
-                Console.WriteLine("Listening has begun.");
-            }
+              this.activ = true;
+              Console.WriteLine("Listening has begun.");
         }
     }
 }
