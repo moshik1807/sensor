@@ -21,6 +21,9 @@
                     Pulse pulse = new Pulse(type);
                     sensor = pulse;
                     break;
+                case "magnetic":
+                    Magnetic magnetic = new Magnetic(type);
+                    break;
                 default:
                     break;
             }
