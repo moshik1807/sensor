@@ -24,6 +24,9 @@
                 case "magnetic":
                     Magnetic magnetic = new Magnetic(type);
                     break;
+                case "singel":
+                    Singel singel = new Singel(type);
+                    break;
                 default:
                     break;
             }
