@@ -25,6 +25,20 @@
                         newTerorrist.SuitableSensors.Add(sensor.createSensor(sensorType[rnd.Next(0, sensorType.Count)]));
                     }
                     break;
+                case "senior commander":
+                    newTerorrist = new SeniorCommander(type);
+                    for (int i = 0; i < 6; i++)
+                    {
+                        newTerorrist.SuitableSensors.Add(sensor.createSensor(sensorType[rnd.Next(0, sensorType.Count)]));
+                    }
+                    break;
+                case "organization leader":
+                    newTerorrist = new OrganizationLeader(type);
+                    for (int i = 0; i < 8; i++)
+                    {
+                        newTerorrist.SuitableSensors.Add(sensor.createSensor(sensorType[rnd.Next(0, sensorType.Count)]));
+                    }
+                    break;
                 default:
                     break;
             }
