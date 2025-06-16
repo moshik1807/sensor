@@ -18,7 +18,7 @@ namespace sensor.models
                 Game(terorrist);
             }
         }
-
+        
         public void Game(Terorrist terorrist)
         {
             int Mistakes = 0;
