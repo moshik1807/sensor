@@ -22,17 +22,17 @@
                 }
             }
 
-            if (this.counter2 >= 10)
-            {
-                foreach (var sensor in this.SuitableSensors)
-                {
-                    if (sensor.activ)
-                    {
-                        sensor.activ = false;
-                    }
-                }
-                this.counter2 = 0;
-            }
+            //if (this.counter2 >= 10)
+            //{
+            //    foreach (var sensor in this.SuitableSensors)
+            //    {
+            //        if (sensor.activ)
+            //        {
+            //            sensor.activ = false;
+            //        }
+            //    }
+            //    this.counter2 = 0;
+            //}
 
         }
 

@@ -7,7 +7,7 @@
         }
         public override void protection()
         {
-            Console.WriteLine("He has no defense");
+            Console.WriteLine("");
         }
 
     }
