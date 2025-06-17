@@ -5,7 +5,7 @@
         public FootSoldier(string name):base(name)
         {
         }
-        public override void protection()
+        public override void Counterattack()
         {
             Console.WriteLine("");
         }

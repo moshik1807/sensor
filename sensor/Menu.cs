@@ -48,7 +48,7 @@ namespace sensor.models
                         break;
                     }
                 }
-                terorrist.protection();
+                terorrist.Counterattack();
 
                 //סופר כמה סנסורים דלוקים ומדפיס הודעה בהתאם
                 int activeCount = 0;

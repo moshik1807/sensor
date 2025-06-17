@@ -1,8 +1,8 @@
 ﻿namespace sensor.models
 {
-    public class Singel:Sensor
+    public class Signal:Sensor
     {
-        public Singel(string name) : base(name)
+        public Signal(string name) : base(name)
         {
         }
         public override void Activate(Terorrist terorrist)
