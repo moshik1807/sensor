@@ -13,9 +13,10 @@ namespace sensor.models
             Terorrist terorrist3 = new terorristFactory().creatTerorrist("senior commander");
             Terorrist terorrist4 = new terorristFactory().creatTerorrist("organization leader");
             List<Terorrist> terorristList = new List<Terorrist> { terorrist1, terorrist2, terorrist3, terorrist4 };
-            foreach(var terorrist in terorristList)
+            for (int i = 0;i < terorristList.Count();i++)
             {
-                Game(terorrist);
+                Console.WriteLine($"--level {i+1}--");
+                Game(terorristList[i]);
             }
         }
         

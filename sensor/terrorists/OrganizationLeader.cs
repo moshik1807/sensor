@@ -23,6 +23,7 @@
                         {
                             sensor.activ = false;
                             this.counter = 0;
+                            Console.WriteLine("A counterattack was carried out and one sensor was disabled.");
                             break;
                         }
                     }
