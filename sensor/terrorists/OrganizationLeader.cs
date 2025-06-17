@@ -5,7 +5,7 @@
         public OrganizationLeader(string name):base(name)
         {
         }
-        public override void protection()
+        public override void Counterattack()
         {
             this.counter++;
             if (this.counter >= 3)

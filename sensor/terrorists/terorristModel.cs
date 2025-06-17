@@ -12,7 +12,7 @@ namespace sensor.models
         {
             Name = name;
         }
-        public abstract void protection();
+        public abstract void Counterattack();
     }
 }
 

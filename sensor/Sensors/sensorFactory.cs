@@ -24,8 +24,8 @@
                     Magnetic magnetic = new Magnetic(type);
                     sensor = magnetic;
                     break;
-                case "singel":
-                    Singel singel = new Singel(type);
+                case "signal":
+                    Signal singel = new Signal(type);
                     sensor = singel;
                     break;
                 default:
