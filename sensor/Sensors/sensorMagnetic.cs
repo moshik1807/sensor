@@ -9,6 +9,7 @@
         {
             this.activ = true;
             terorrist.AttackBlocker ++;
+            Console.WriteLine("You guessed it, that's why the next counterattack is canceled.");
         }
     }
 }

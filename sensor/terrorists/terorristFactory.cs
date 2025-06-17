@@ -4,6 +4,7 @@
     {
         public Random rnd = new Random();
         public List<string> sensorType = new List<string> {"audio", "thermal", "pulse", "magnetic", "signal" };
+
         public Terorrist creatTerorrist(string rank)
         {
             Terorrist newTerorrist = null;

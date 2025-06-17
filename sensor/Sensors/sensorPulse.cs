@@ -11,6 +11,7 @@
             counter++;
             if (counter >= 3)
             {
+                Console.WriteLine("You used the pulse 3 times, so one pulse broke.");
                 foreach(var sensor in terorrist.SuitableSensors)
                 {
                     if(sensor.Name == "pulse")

@@ -28,6 +28,7 @@
                         }
                         if (temp == 2)
                         {
+                            Console.WriteLine("A counterattack was carried out and two sensors were disabled.");
                             break;
                         }
                     }
