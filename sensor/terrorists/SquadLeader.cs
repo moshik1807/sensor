@@ -2,7 +2,7 @@
 {
     public class SquadLeader:Terorrist
     {
-        public SquadLeader(string name) : base(name)
+        public SquadLeader(string rank) : base(rank)
         {
         }
         public override void Counterattack()

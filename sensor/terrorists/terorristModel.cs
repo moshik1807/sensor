@@ -5,12 +5,12 @@ namespace sensor.models
     public abstract class Terorrist
     {
         public List<Sensor> SuitableSensors = new List<Sensor>();
-        public string Name;
+        public string Rank;
         public int counter = 0;
         public int AttackBlocker = 0;
-        public Terorrist(string name)
+        public Terorrist(string rank)
         {
-            Name = name;
+            Rank = rank;
         }
         public abstract void Counterattack();
     }
