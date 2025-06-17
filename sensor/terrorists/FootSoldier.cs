@@ -2,7 +2,7 @@
 {
     public class FootSoldier:Terorrist
     {
-        public FootSoldier(string name):base(name)
+        public FootSoldier(string rank) :base(rank)
         {
         }
         public override void Counterattack()

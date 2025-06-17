@@ -2,7 +2,7 @@
 {
     public class SeniorCommander:Terorrist
     {
-        public SeniorCommander(string name):base(name)
+        public SeniorCommander(string rank) :base(rank)
         {
         }
         public override void Counterattack()

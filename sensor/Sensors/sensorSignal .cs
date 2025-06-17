@@ -8,7 +8,7 @@
         public override void Activate(Terorrist terorrist)
         {
             this.activ = true;
-            Console.WriteLine($"this agent rank is {terorrist.Name}");
+            Console.WriteLine($"this agent rank is {terorrist.Rank}");
         }
     }
 }
