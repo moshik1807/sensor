@@ -20,14 +20,16 @@ namespace sensor.models
             Player player = xxxx(fullNme);
 
 
-            for (int i = 0;i < terorristList.Count();i++)
+            for (int i = player.CurrentLevel-1; i < terorristList.Count();i++)
             {
                 Console.WriteLine($"--level {i+1}--");
-                Game(terorristList[i]);
+                Game(terorristList[i], player);
             }
         }
-        public void Game(Terorrist terorrist)
+        public void Game(Terorrist terorrist, Player player)
         {
+            MySql x = new MySql();
+            DalPlayer dalplayer = new DalPlayer(x);
             int Mistakes = 0;
             while (true)
             {
@@ -80,6 +82,7 @@ namespace sensor.models
 
                 if (activeCount == terorrist.SuitableSensors.Count())
                 {
+                    dalplayer.AddReportToPepole(player);
                     Console.WriteLine("you won!");
                     break;
                 }
