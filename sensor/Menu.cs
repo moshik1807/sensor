@@ -82,12 +82,13 @@ namespace sensor.models
 
                 if (activeCount == terorrist.SuitableSensors.Count())
                 {
-                    if(player.CurrentLevel >= 3)
+                   
+                    dalplayer.AddReportToPepole(player);
+                    Console.WriteLine("you won!");
+                    if (player.CurrentLevel >= 3)
                     {
                         dalplayer.AddWinToPlayer(player);
                     }
-                    dalplayer.AddReportToPepole(player);
-                    Console.WriteLine("you won!");
                     break;
                 }
             }
