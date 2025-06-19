@@ -85,7 +85,7 @@ namespace sensor.models
                    
                     dalplayer.AddReportToPepole(player);
                     Console.WriteLine("you won!");
-                    if (player.CurrentLevel >= 3)
+                    if (player.CurrentLevel >= 4)
                     {
                         dalplayer.AddWinToPlayer(player);
                     }
