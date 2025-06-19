@@ -136,7 +136,7 @@ namespace sensor.models
             try
             {
                 MySqlConnection conn = mySql.GetConnection();
-                MySqlCommand cmd = new MySqlCommand($"UPDATE players SET number_of_wins = number_of_wins+1,current_level = 0 WHERE id = {player.Id}", conn);
+                MySqlCommand cmd = new MySqlCommand($"UPDATE players SET number_of_wins = number_of_wins+1,current_level = 1 WHERE id = {player.Id}", conn);
                 cmd.ExecuteNonQuery();
             }
             catch (MySqlException ex)
